@@ -12,7 +12,7 @@ MVSR_USERNAME = os.getenv("MVSR_USERNAME", "245122737094")
 MVSR_PASSWORD = os.getenv("MVSR_PASSWORD", "245122737094")
 
 # Loop frequency (seconds)
-LOOP_INTERVAL_SEC = int(os.getenv("LOOP_INTERVAL_SEC", "30"))  # 3 minutes
+LOOP_INTERVAL_SEC = int(os.getenv("LOOP_INTERVAL_SEC", "180"))  # 3 minutes
 REQUEST_TIMEOUT   = int(os.getenv("REQUEST_TIMEOUT", "30"))
 
 # URLs
@@ -99,3 +99,4 @@ if __name__ == "__main__":
             send_telegram(err)
 
         time.sleep(LOOP_INTERVAL_SEC)
+
